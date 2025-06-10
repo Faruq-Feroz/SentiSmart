@@ -1,0 +1,126 @@
+.reports-section {
+  padding: 20px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.report-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition: transform 0.3s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-5px);
+}
+
+.report-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.report-content {
+  margin-bottom: 20px;
+}
+
+/* PDF Report Styling */
+.pdf-report {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pdf-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.pdf-section {
+  margin-bottom: 25px;
+}
+
+.pdf-section-title {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.pdf-download-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 20px auto;
+}
+
+.pdf-download-btn:hover {
+  background-color: #45a049;
+}
+
+.chart-container {
+  margin: 20px 0;
+  height: 250px;
+}
+
+.advice-item {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  border-left: 4px solid #4CAF50;
+}
+
+.financial-score {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4CAF50;
+  margin: 20px 0;
+}
+
+.score-label {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.expense-category {
+  font-weight: 500;
+}
+
+.expense-amount {
+  font-weight: 600;
+}

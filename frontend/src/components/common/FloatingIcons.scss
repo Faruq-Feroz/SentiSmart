@@ -1,0 +1,83 @@
+.floating-icons-container {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.floating-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  font-size: 24px;
+}
+
+.floating-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-icon {
+  background-color: #25D366;
+  color: white;
+}
+
+.chat-icon {
+  background-color: #452d38;
+  color: white;
+}
+
+.chat-form-container {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  z-index: 1001;
+}
+
+.chat-form-container h5 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.success-message {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.success-message p {
+  margin-bottom: 8px;
+  color: #4CAF50;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floating-icons-container {
+    right: 15px;
+    bottom: 80px;
+  }
+  
+  .floating-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .chat-form-container {
+    width: 280px;
+  }
+}

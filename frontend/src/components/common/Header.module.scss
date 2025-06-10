@@ -1,0 +1,307 @@
+/* Navbar Base */
+.modernNavbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.navbarContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+/* Logo Styles */
+.navbarBrand {
+  display: flex;
+  align-items: center;
+}
+
+.navbarLogo {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.navbarLogo:hover {
+  transform: scale(1.05);
+}
+
+/* Desktop Navigation */
+.desktopNav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navLink {
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navLink:hover {
+  color: #059669;
+  text-decoration: none;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #059669, #10b981);
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+/* Auth Buttons */
+.authButtons {
+  display: flex;
+  gap: 1rem;
+  margin-left: 1.5rem;
+}
+
+.signInButton {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #452d38;
+  border-radius: 8px;
+  color: #452d38;
+  font-weight: 600;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.signInButton:hover {
+  color: #fff;
+}
+
+.signInButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #452d38;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.signInButton:hover::before {
+  width: 100%;
+}
+
+.signUpButton {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #3a7f0d;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 4px 12px rgba(58, 127, 13, 0.2);
+}
+
+.signUpButton:hover {
+  box-shadow: 0 6px 16px rgba(58, 127, 13, 0.3);
+  transform: translateY(-2px);
+}
+
+.signUpButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+}
+
+.signUpButton:hover::before {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile Auth Buttons - Apply the same styles */
+.mobileAuthButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #f3f4f6;
+  margin-top: 0.5rem;
+}
+
+.mobileAuthButtons .signInButton,
+.mobileAuthButtons .signUpButton {
+  text-align: center;
+  display: block;
+  padding: 0.75rem 1rem;
+}
+
+/* Mobile Menu Toggle */
+.mobileMenuToggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  gap: 4px;
+}
+
+.hamburgerLine {
+  width: 25px;
+  height: 3px;
+  background: #4b5563;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.hamburgerLine.active:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburgerLine.active:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerLine.active:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Navigation */
+.mobileNav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-top: 1px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 1rem 0;
+  animation: mobileSlide 0.3s ease;
+}
+
+@keyframes mobileSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobileNav.active {
+  display: block;
+}
+
+.mobileNavLink {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid #f3f4f6;
+  transition: all 0.2s ease;
+}
+
+.mobileNavLink:hover {
+  background: #f9fafb;
+  color: #059669;
+  text-decoration: none;
+  padding-left: 2rem;
+}
+
+.mobileAuthButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #f3f4f6;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbarContainer {
+    padding: 0 1rem;
+  }
+  
+  .desktopNav {
+    gap: 1.5rem;
+  }
+  
+  .navLink {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktopNav {
+    display: none;
+  }
+  
+  .authButtons {
+    display: none;
+  }
+  
+  .mobileMenuToggle {
+    display: flex;
+  }
+  
+  .navbarLogo {
+    width: 160px;
+  }
+  
+  .navbarContainer {
+    height: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbarContainer {
+    padding: 0 1rem;
+  }
+  
+  .navbarLogo {
+    width: 140px;
+  }
+  
+  .mobileNavLink {
+    padding: 0.875rem 1rem;
+  }
+}

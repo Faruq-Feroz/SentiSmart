@@ -1,0 +1,91 @@
+.daily-tip-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.daily-tip-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.tips-carousel .carousel-indicators {
+  bottom: -10px;
+}
+
+.tips-carousel .carousel-indicators button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #dee2e6;
+  margin: 0 4px;
+}
+
+.tips-carousel .carousel-indicators button.active {
+  background-color: #007bff;
+}
+
+.tips-carousel .carousel-control-prev,
+.tips-carousel .carousel-control-next {
+  width: 10%;
+  opacity: 0.7;
+}
+
+.tips-carousel .carousel-control-prev-icon,
+.tips-carousel .carousel-control-next-icon {
+  filter: invert(50%);
+}
+
+.tip-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 30px 20px;
+  position: relative;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tip-icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.tip-text {
+  font-size: 1.1rem;
+  color: #333;
+  font-style: italic;
+  text-align: center;
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+}
+
+.tip-category {
+  display: inline-block;
+  background-color: #e6f3ff;
+  color: #007bff;
+  font-size: 0.8rem;
+  padding: 3px 10px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.tips-loading {
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+}
+
+.tips-error {
+  text-align: center;
+  padding: 20px;
+  color: #dc3545;
+}

@@ -1,0 +1,105 @@
+/* M-PESA Section Styles */
+.mpesa-section {
+  padding: 20px 0;
+}
+
+.mpesa-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.mpesa-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mpesa-card .card-header {
+  background: linear-gradient(135deg, #43a047, #1b5e20);
+  color: white;
+  font-weight: 600;
+  padding: 15px 20px;
+}
+
+.mpesa-card .card-body {
+  padding: 20px;
+}
+
+.mpesa-form-label {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.mpesa-input {
+  border-radius: 8px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mpesa-input:focus {
+  border-color: #43a047;
+  box-shadow: 0 0 0 0.2rem rgba(67, 160, 71, 0.25);
+}
+
+.mpesa-button {
+  background: linear-gradient(135deg, #43a047, #1b5e20);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mpesa-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mpesa-button:active {
+  transform: translateY(0);
+}
+
+.payment-history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.payment-history-table th,
+.payment-history-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.payment-history-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.payment-history-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.payment-status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-failed {
+  background-color: #f8d7da;
+  color: #721c24;
+}
