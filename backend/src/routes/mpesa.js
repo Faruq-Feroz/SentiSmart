@@ -12,7 +12,8 @@ router.post('/billpayment', mpesaController.initiateBillPayment);
 router.post('/savebill', mpesaController.saveBillPayment);
 
 // Callback URL for M-Pesa
-router.post('/callback', mpesaController.mpesaCallback);
+// Add this route to match your existing callback URL
+router.post('/orders/callback', mpesaController.mpesaCallback);
 
 // Query transaction status
 router.post('/query', mpesaController.queryTransactionStatus);
