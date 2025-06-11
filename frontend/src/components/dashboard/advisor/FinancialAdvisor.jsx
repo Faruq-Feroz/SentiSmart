@@ -111,7 +111,7 @@ const FinancialAdvisor = () => {
       advice += "⚠️ **Income Status**: No income recorded\n"
       advice += "Please update your monthly income to get personalized advice.\n\n"
     } else {
-      advice += `💰 **Monthly Income**: $${budget.income.toFixed(2)}\n\n`
+      advice += `💰 **Monthly Income**: KSH ${budget.income.toFixed(2)}\n\n`
     }
     
     // Expense analysis
@@ -119,7 +119,7 @@ const FinancialAdvisor = () => {
       advice += "📝 **Expenses**: No expenses tracked yet\n"
       advice += "Start adding your expenses to get detailed spending insights.\n\n"
     } else {
-      advice += `💸 **Total Expenses**: $${totalExpenses.toFixed(2)} (${(totalExpenses / budget.income * 100).toFixed(1)}% of income)\n\n`
+      advice += `💸 **Total Expenses**: KSH ${totalExpenses.toFixed(2)} (${(totalExpenses / budget.income * 100).toFixed(1)}% of income)\n\n`
       
       // Categorize expenses
       const expensesByCategory = {}
@@ -142,13 +142,13 @@ const FinancialAdvisor = () => {
       })
       
       if (highestCategory) {
-        advice += `🔍 **Top Spending Category**: ${highestCategory} - $${highestAmount.toFixed(2)} (${(highestAmount / totalExpenses * 100).toFixed(1)}% of expenses)\n\n`
+        advice += `🔍 **Top Spending Category**: ${highestCategory} - KSH ${highestAmount.toFixed(2)} (${(highestAmount / totalExpenses * 100).toFixed(1)}% of expenses)\n\n`
       }
     }
     
     // Savings analysis
     if (budget.income > 0) {
-      advice += `💵 **Monthly Savings**: $${savings.toFixed(2)} (${savingsPercentage.toFixed(1)}% of income)\n\n`
+      advice += `💵 **Monthly Savings**: KSH ${savings.toFixed(2)} (${savingsPercentage.toFixed(1)}% of income)\n\n`
       
       if (savingsPercentage < 0) {
         advice += `🚨 **Alert**: You're spending more than you earn! This needs immediate attention.\n\n`

@@ -34,5 +34,29 @@ Below are screenshots showcasing different parts of the application.
 
 ---
 
+##  Donation
+
+![Footer Screenshot](../Screenshots/Donation.png)
+
+---
+
+##  Mpesa
+
+![Footer Screenshot](../Screenshots/MPESA.png)
+
+---
+
+##  Recommendations
+
+![Footer Screenshot](../Screenshots/Recommendations.png)
+
+---
+
+##  Videos
+
+![Footer Screenshot](../Screenshots/Videos.png)
+
+---
+
 
 

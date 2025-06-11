@@ -210,9 +210,8 @@ const Login = () => {
       <WelcomeModal
         show={showWelcomeModal}
         onClose={handleModalClose}
-        title="Welcome Back to"
+        title="Welcome Back to SentiSmart"
         message="We're glad to see you again! Your financial journey continues with personalized insights and smart recommendations waiting for you."
-        userName={email.split('@')[0] || 'Valued Customer'}
         isNewUser={false}
       />
     </>

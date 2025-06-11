@@ -26,7 +26,7 @@ const SavingsSection = () => {
           <div className="savings-stats">
             <div className="stat-card">
               <div className="stat-title">Total Saved</div>
-              <div className="stat-value">${totalSaved.toFixed(2)}</div>
+              <div className="stat-value">KSH {totalSaved.toFixed(2)}</div>
             </div>
             
             <div className="stat-card">

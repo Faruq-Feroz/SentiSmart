@@ -1,134 +1,149 @@
-.welcome-modal .modal-dialog {
-  max-width: 500px; /* Increased from 450px */
+/* Welcome Modal */
+.welcomeModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
 }
 
-.welcome-modal .modal-content {
-  border: none;
-  border-radius: 16px;
-  padding: 2rem 1.5rem; /* Reduced from 2.5rem 2rem */
+.welcomeModalContent {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
   text-align: center;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: modalFadeIn 0.4s ease-out forwards;
   position: relative;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  animation: modalFadeIn 0.5s ease-out;
 }
 
-.welcome-modal .new-user {
-  background: #3a7f0d; /* Removed gradient, using solid color */
+@keyframes modalFadeIn {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.welcomeModalContent h2 {
+  color: #2875ff;
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+}
+
+.welcomeModalContent h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.welcomeModalContent p {
+  margin-bottom: 25px;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.welcomeStats {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.welcomeStat {
+  text-align: center;
+}
+
+.welcomeStatNumber {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #2875ff;
+  margin-bottom: 5px;
+}
+
+.welcomeStatLabel {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.welcomeButton {
+  background-color: #2875ff;
   color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  margin-top: 10px;
 }
 
-.welcome-modal .returning-user {
-  background: #452d38; /* Removed gradient, using solid color */
-  color: white;
+.welcomeButton:hover {
+  background-color: #1a5cbf;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(40, 117, 255, 0.3);
 }
 
-.welcome-modal .close-button {
+.closeButton {
   position: absolute;
   top: 15px;
   right: 15px;
   background: transparent;
   border: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: #999;
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.2s;
 }
 
-.welcome-modal .close-button:hover {
-  color: white;
+.closeButton:hover {
+  color: #333;
   transform: scale(1.1);
 }
 
-.welcome-modal .modal-icon {
-  font-size: 4rem;
-  color: white;
-  margin-bottom: 1.5rem;
+.modalIcon {
+  font-size: 3rem;
+  color: #2875ff;
+  margin-bottom: 1rem;
   animation: iconPulse 2s infinite;
 }
 
-.welcome-modal .modal-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.welcome-modal .user-name {
-  font-size: 2.2rem;
-  font-weight: 800;
-  margin-bottom: 1.5rem;
-  background: linear-gradient(to right, #ffffff, #f0f0f0);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.welcome-modal .modal-message {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  line-height: 1.6;
-  opacity: 0.9;
-}
-
-.welcome-modal .modal-button {
-  background-color: white;
-  color: #3a7f0d; /* Using the specified green color */
-  border: none;
-  border-radius: 50px;
-  padding: 0.75rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.welcome-modal .modal-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-@keyframes modalFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @keyframes iconPulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
 
 @media (max-width: 576px) {
-  .welcome-modal .modal-content {
-    padding: 1.5rem 1rem; /* Further reduced for mobile */
+  .welcomeModalContent {
+    padding: 25px 20px;
   }
   
-  .welcome-modal .modal-icon {
-    font-size: 3rem;
-  }
-  
-  .welcome-modal .modal-title {
+  .welcomeModalContent h2 {
     font-size: 1.5rem;
   }
   
-  .welcome-modal .user-name {
+  .welcomeModalContent h3 {
+    font-size: 1.3rem;
+  }
+  
+  .welcomeModalContent p {
+    font-size: 1rem;
+  }
+  
+  .welcomeStatNumber {
     font-size: 1.8rem;
   }
   
-  .welcome-modal .modal-message {
+  .welcomeButton {
+    padding: 10px 25px;
     font-size: 1rem;
   }
 }

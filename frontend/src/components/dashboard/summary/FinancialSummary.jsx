@@ -97,18 +97,18 @@ const FinancialSummary = () => {
       <div className="summary-stats">
         <div className="stat-item">
           <span className="stat-label">Monthly Income:</span>
-          <span className="stat-value">${budget.income.toFixed(2)}</span>
+          <span className="stat-value">KSH {budget.income.toFixed(2)}</span>
         </div>
         
         <div className="stat-item">
           <span className="stat-label">Total Expenses:</span>
-          <span className="stat-value">${totalExpenses.toFixed(2)}</span>
+          <span className="stat-value">KSH {totalExpenses.toFixed(2)}</span>
         </div>
         
         <div className="stat-item">
           <span className="stat-label">Remaining Savings:</span>
           <span className="stat-value ${savings < 0 ? 'negative' : ''}">
-            ${savings.toFixed(2)}
+            KSH {savings.toFixed(2)}
           </span>
         </div>
       </div>

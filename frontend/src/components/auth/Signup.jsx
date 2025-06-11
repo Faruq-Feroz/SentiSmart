@@ -154,7 +154,6 @@ const Signup = () => {
         onClose={handleModalClose}
         title="Welcome to SentiSmart"
         message="Congratulations on taking the first step toward financial freedom! We're excited to help you manage your finances smartly and achieve your goals."
-        userName={name || email.split('@')[0] || 'New Friend'}
         isNewUser={true}
       />
     </>

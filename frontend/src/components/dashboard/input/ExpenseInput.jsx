@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { BudgetContext } from '../../../context/BudgetContext'
 import './InputStyles.scss'
 
-const ExpenseInput = () => {
+const ExpenseInput = ({ variant = 'default' }) => {
   const { budget, setBudget } = useContext(BudgetContext)
   const [expenseName, setExpenseName] = useState('')
   const [expenseAmount, setExpenseAmount] = useState('')
@@ -67,8 +67,8 @@ const ExpenseInput = () => {
         <p>Add your daily expenses to monitor your spending</p>
       </div>
       
-      <form onSubmit={handleSubmit} className="expense-form">
-        <div className="form-grid">
+      <form onSubmit={handleSubmit} className={`expense-form ${variant === 'compact' ? 'compact-form' : ''}`}>
+        <div className={`form-grid ${variant === 'compact' ? 'compact-grid' : ''}`}>
           <div className="input-field">
             <label>Expense Name</label>
             <input
@@ -84,7 +84,7 @@ const ExpenseInput = () => {
           <div className="input-field">
             <label>Amount</label>
             <div className="amount-input-group">
-              <span className="currency-symbol">$</span>
+              <span className="currency-symbol">KSH</span>
               <input
                 type="number"
                 value={expenseAmount}
@@ -113,7 +113,6 @@ const ExpenseInput = () => {
             </select>
           </div>
           
-          {/* Make the submit button more visible and ensure it's not hidden */}
           <div className="submit-field">
             <button type="submit" className="add-expense-btn" style={{marginTop: '10px', width: '100%'}}>
               <span className="btn-icon">➕</span>
@@ -129,7 +128,7 @@ const ExpenseInput = () => {
             <div className="expenses-header">
               <h4>Recent Expenses</h4>
               <div className="total-expenses">
-                Total: ${budget.expenses.reduce((sum, exp) => sum + exp.amount, 0).toFixed(2)}
+                Total: KSH {budget.expenses.reduce((sum, exp) => sum + exp.amount, 0).toFixed(2)}
               </div>
             </div>
             <div className="expenses-grid">
@@ -143,7 +142,7 @@ const ExpenseInput = () => {
                         <span className="expense-category">{expense.category}</span>
                       </div>
                     </div>
-                    <div className="expense-amount">${expense.amount.toFixed(2)}</div>
+                    <div className="expense-amount">KSH {expense.amount.toFixed(2)}</div>
                   </div>
                   <button 
                     onClick={() => handleDeleteExpense(expense.id)}

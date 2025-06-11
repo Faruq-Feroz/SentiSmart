@@ -161,6 +161,42 @@ const SmartRecommendations = () => {
     }
   }
 
+  // Helper function to get user-friendly button text
+  const getActionButtonText = (action) => {
+    switch (action) {
+      case 'SET_SAVINGS_GOAL':
+        return 'Set Goal'
+      case 'VIEW_INVESTMENT_OPTIONS':
+        return 'View Investments'
+      case 'VIEW_FOOD_TIPS':
+        return 'Food Tips'
+      case 'VIEW_TRANSPORT_TIPS':
+        return 'Transport Tips'
+      case 'VIEW_HOUSING_OPTIONS':
+        return 'Housing Options'
+      case 'ADJUST_GOAL_CONTRIBUTION':
+        return 'Adjust Goal'
+      case 'CELEBRATE_PROGRESS':
+        return 'View Progress'
+      default:
+        return 'Learn More'
+    }
+  }
+
+  // Helper function to get button class based on recommendation type
+  const getButtonClass = (type) => {
+    switch (type) {
+      case 'success':
+        return 'btn-success'
+      case 'warning':
+        return 'btn-warning'
+      case 'info':
+        return 'btn-info'
+      default:
+        return 'btn-default'
+    }
+  }
+
   if (loading) {
     return <div className="recommendations-loading">Loading recommendations...</div>
   }
@@ -196,8 +232,8 @@ const SmartRecommendations = () => {
               )}
             </div>
             {recommendation.action && (
-              <button className="recommendation-action-btn">
-                {recommendation.action.replace(/_/g, ' ').toLowerCase()}
+              <button className={`recommendation-action-btn ${getButtonClass(recommendation.type)}`}>
+                {getActionButtonText(recommendation.action)}
               </button>
             )}
           </div>

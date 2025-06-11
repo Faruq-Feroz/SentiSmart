@@ -406,7 +406,7 @@ const SavingsGoals = () => {
                         marginBottom: '0.5rem',
                         fontWeight: '600',
                         color: '#374151'
-                      }}>Target Amount ($)</label>
+                      }}>Target Amount (KSH)</label>
                       <input 
                         type="number" 
                         name="targetAmount" 
@@ -443,7 +443,7 @@ const SavingsGoals = () => {
                         marginBottom: '0.5rem',
                         fontWeight: '600',
                         color: '#374151'
-                      }}>Current Amount ($)</label>
+                      }}>Current Amount (KSH)</label>
                       <input 
                         type="number" 
                         name="currentAmount" 

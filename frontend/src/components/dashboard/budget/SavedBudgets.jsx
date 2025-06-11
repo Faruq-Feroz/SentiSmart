@@ -43,9 +43,9 @@ const SavedBudgets = () => {
                 <h4>{savedBudget.name}</h4>
                 <p className="saved-date">Saved on: {formatDate(savedBudget.date)}</p>
                 <p className="saved-summary">
-                  Income: ${savedBudget.income.toFixed(2)} | 
-                  Expenses: ${savedBudget.expenses.reduce((sum, exp) => sum + exp.amount, 0).toFixed(2)} | 
-                  Savings: ${savedBudget.savings.toFixed(2)}
+                  Income: KSH {savedBudget.income.toFixed(2)} | 
+                  Expenses: KSH {savedBudget.expenses.reduce((sum, exp) => sum + exp.amount, 0).toFixed(2)} | 
+                  Savings: KSH {savedBudget.savings.toFixed(2)}
                 </p>
               </div>
               <div className="saved-actions">

@@ -27,7 +27,7 @@ const SalaryInput = () => {
       </div>
       <form onSubmit={handleSubmit} className="expense-form">
         <div className="amount-input-group">
-          <span className="currency-symbol">$</span>
+          <span className="currency-symbol">KSH</span>
           <input
             type="number"
             value={salary}

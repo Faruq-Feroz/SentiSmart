@@ -1,106 +1,156 @@
 .recommendations-container {
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  margin-bottom: 24px;
 }
 
 .recommendations-title {
   font-size: 1.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: #333;
+  font-weight: 600;
 }
 
 .recommendations-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 16px;
 }
 
 .recommendation-card {
-  border-radius: 8px;
-  padding: 15px;
+  border-radius: 10px;
+  padding: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: transform 0.2s;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .recommendation-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .badge-success {
-  background-color: #e6f7ed;
-  border-left: 4px solid #28a745;
+  background-color: #e8f5e9;
+  border-left: 4px solid #2e7d32;
 }
 
 .badge-warning {
-  background-color: #fff8e6;
-  border-left: 4px solid #ffc107;
+  background-color: #fff8e1;
+  border-left: 4px solid #ff8f00;
 }
 
 .badge-info {
-  background-color: #e6f3ff;
-  border-left: 4px solid #17a2b8;
+  background-color: #e3f2fd;
+  border-left: 4px solid #1976d2;
 }
 
 .badge-default {
-  background-color: #f8f9fa;
-  border-left: 4px solid #6c757d;
+  background-color: #f5f5f5;
+  border-left: 4px solid #757575;
 }
 
 .recommendation-content {
   flex: 1;
+  padding-right: 16px;
 }
 
 .recommendation-message {
   margin: 0;
   font-size: 1rem;
   color: #333;
+  line-height: 1.5;
 }
 
 .recommendation-badge {
   display: inline-block;
-  background-color: #28a745;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-success .recommendation-badge {
+  background-color: #2e7d32;
   color: white;
-  font-size: 0.8rem;
-  padding: 3px 8px;
-  border-radius: 12px;
-  margin-top: 8px;
+}
+
+.badge-warning .recommendation-badge {
+  background-color: #ff8f00;
+  color: white;
+}
+
+.badge-info .recommendation-badge {
+  background-color: #1976d2;
+  color: white;
+}
+
+.badge-default .recommendation-badge {
+  background-color: #757575;
+  color: white;
 }
 
 .recommendation-action-btn {
-  background-color: #007bff;
-  color: white;
   border: none;
-  border-radius: 4px;
-  padding: 8px 12px;
+  border-radius: 6px;
+  padding: 10px 16px;
   font-size: 0.9rem;
+  font-weight: 600;
   cursor: pointer;
-  text-transform: capitalize;
-  transition: background-color 0.2s;
+  text-transform: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .recommendation-action-btn:hover {
-  background-color: #0069d9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.recommendation-action-btn.btn-success {
+  background-color: #2e7d32;
+  color: white;
+}
+
+.recommendation-action-btn.btn-warning {
+  background-color: #ff8f00;
+  color: white;
+}
+
+.recommendation-action-btn.btn-info {
+  background-color: #1976d2;
+  color: white;
+}
+
+.recommendation-action-btn.btn-default {
+  background-color: #757575;
+  color: white;
 }
 
 .recommendations-loading {
   text-align: center;
-  padding: 20px;
-  color: #6c757d;
+  padding: 24px;
+  color: #757575;
+  font-style: italic;
 }
 
 .recommendations-error {
   text-align: center;
-  padding: 20px;
-  color: #dc3545;
+  padding: 24px;
+  color: #d32f2f;
+  font-weight: 500;
 }
 
 .recommendations-empty {
   text-align: center;
-  padding: 20px;
-  color: #6c757d;
+  padding: 24px;
+  color: #757575;
 }

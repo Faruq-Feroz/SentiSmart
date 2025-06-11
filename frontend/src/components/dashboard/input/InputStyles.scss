@@ -75,6 +75,12 @@ $gradient-card: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(16, 18
   width: 100%; // Ensure full width
   min-width: 0; // Allow grid items to shrink
   
+  // Compact vertical layout for dashboard overview
+  &.compact-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
   // Better tablet breakpoint
   @media (max-width: 1024px) {
     grid-template-columns: 1fr 1fr;
