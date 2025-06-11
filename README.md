@@ -1,34 +1,15 @@
 # 🚀 SentiSmart Financial Partner
 
-### *A Smart Companion for Every Financial Move — Save, Spend, Share, and Succeed*
+**_A Smart Companion for Every Financial Move — Save, Spend, Share, and Succeed_**
 
----
+## Live Demo
 
-<a href="https://www.canva.com/design/DAGp5CzSsKo/9u6kIJCvQXMJ6IrIWS3tVw/edit?utm_content=DAGp5CzSsKo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
-  <img src="https://img.shields.io/badge/📖%20Pitch%20Deck-Presentation-800080?style=for-the-badge&labelColor=800080&logo=book&logoColor=white" alt="Pitch-deck" />
-</a>
+[![Pitch Deck](https://img.shields.io/badge/📖%20Pitch%20Deck-Presentation-800080?style=for-the-badge&labelColor=800080&logo=book&logoColor=white)](https://www.canva.com/design/DAGp5CzSsKo/9u6kIJCvQXMJ6IrIWS3tVw/edit?utm_content=DAGp5CzSsKo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[![Live Demo](https://img.shields.io/badge/🚀%20LIVE-DEMO-00FF7F?style=for-the-badge&labelColor=FF6B35&logo=rocket&logoColor=white)](https://senti-smart.vercel.app/)
+[![Screenshots](https://img.shields.io/badge/📸%20Screenshots-Gallery-FF1493?style=for-the-badge&labelColor=FF1493&logo=image&logoColor=white)](./frontend/README.md)
 
-<br>
-
-<a href="https://senti-smart.vercel.app/" target="_blank">
-  <img src="https://img.shields.io/badge/🚀%20LIVE-DEMO-00FF7F?style=for-the-badge&labelColor=FF6B35&logo=rocket&logoColor=white" alt="Live Demo" />
-</a>
-
-<br>
-
-<a href="./frontend/README.md" target="_blank">
-  <img src="https://img.shields.io/badge/📸%20Screenshots-Gallery-FF1493?style=for-the-badge&labelColor=FF1493&logo=image&logoColor=white" alt="Screenshots" />
-</a>
-
-<br><br>
-
-<a href="https://senti-smart.vercel.app/" target="_blank">
-  <img src="./Screenshots/Hero.png" alt="SentiSmart Live Demo" width="100%" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.1);" />
-  <br><br>
-  <em>✨ Experience SentiSmart in action - Click to visit! ✨</em>
-</a>
-
-<br>
+### [![SentiSmart Live Demo](./Screenshots/Hero.png)](https://senti-smart.vercel.app/)
+**✨ Experience SentiSmart in action - Click to visit! ✨**
 
 [![MIT License](https://img.shields.io/badge/License-MIT-28a745?style=flat-square&logo=github)](https://choosealicense.com/licenses/mit/)
 [![Node.js Version](https://img.shields.io/badge/Node.js-%3E%3D14.0.0-339933?style=flat-square&logo=node.js)](https://nodejs.org/)
@@ -38,53 +19,34 @@
 
 ---
 
+## 📋 Table of Contents
 
-<br>
+- [Smart Tech. Real Benefits](#-smart-tech-real-benefits)
+- [The Problem We Solve](#-the-problem-we-solve)
+- [What Makes Us Revolutionary](#-what-makes-us-revolutionary)
+- [Core Features That Wow](#-core-features-that-wow)
+- [Technical Excellence](#️-technical-excellence)
+- [Clean Architecture](#-clean-architecture)
+- [API Ecosystem](#-api-ecosystem)
+- [Screenshots & Demo](#-screenshots--demo)
+- [Quick Start Guide](#-quick-start-guide)
+- [Testing & Quality Assurance](#-testing--quality-assurance)
+- [Social Impact & Scalability](#-social-impact--scalability)
+- [Why SentiSmart Wins](#-why-sentismart-wins)
 
-## 📚 Table of Contents
-
-<div style="font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; line-height: 1.8;">
-
-&nbsp;&nbsp;🔬 [Smart Tech. Real Benefits](#-smart-tech-real-benefits)  
-&nbsp;&nbsp;🌟 [The Problem We Solve](#-the-problem-we-solve)  
-&nbsp;&nbsp;⚡ [What Makes Us Revolutionary](#-what-makes-us-revolutionary)  
-&nbsp;&nbsp;🎯 [Core Features That Wow](#-core-features-that-wow)  
-&nbsp;&nbsp;🛠️ [Technical Excellence](#️-technical-excellence)  
-&nbsp;&nbsp;📁 [Clean Architecture](#-clean-architecture)  
-&nbsp;&nbsp;🚀 [API Ecosystem](#-api-ecosystem)  
-&nbsp;&nbsp;🎨 [Screenshots & Demo](#-screenshots--demo)  
-&nbsp;&nbsp;⚡ [Quick Start Guide](#-quick-start-guide)  
-&nbsp;&nbsp;🧪 [Testing & Quality Assurance](#-testing--quality-assurance)  
-&nbsp;&nbsp;🌍 [Social Impact & Scalability](#-social-impact--scalability)  
-&nbsp;&nbsp;🏅 [Why SentiSmart Wins](#-why-sentismart-wins)
-
-</div>
-
-<br><br>
-
-## 🔬 **Smart Tech. Real Benefits**
+## 🔬 Smart Tech. Real Benefits
 
 <div align="center">
   <em>Proudly developed with support from <strong>Power Learn Project</strong> and <strong>Safaricom</strong> through the S-hook Scholarship Program</em>
 </div>
 
-<br>
-
 > ### *"SentiSmart isn't just an app—it's a financial revolution that transforms how everyone, especially youth, manages money, builds communities, and achieves dreams."*
 
-<br>
-
----
-
-<br>
-
-## 🌟 **The Problem We Solve**
+## 🌟 The Problem We Solve
 
 <div style="padding: 24px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; color: white; margin: 20px 0;">
 
 **60% of African youth lack basic financial literacy.** Traditional financial systems exclude millions. Savings groups (Chamas) operate on trust alone, without digital tools. Financial advice is expensive and inaccessible.
-
-<br>
 
 <div align="center">
   <strong>🎯 SentiSmart changes everything.</strong>
@@ -92,138 +54,62 @@
 
 </div>
 
-<br>
+## ⚡ What Makes Us Revolutionary
 
----
+### 🧠 AI-Powered Financial Brain
 
-<br>
+- **Custom rule engine** delivers personalized financial advice (no external APIs needed)
+- Smart recommendations: *"You're spending 40% on transport—try carpooling to save KES 2,000/month"*
+- Daily rotating financial tips tailored to user behavior
 
-## ⚡ **What Makes Us Revolutionary**
+### 🤝 Real-Time Community Savings (Chama)
 
-<br>
+- **WebSocket-powered** group savings with live chat
+- **Transparent contribution tracking** with celebration animations
+- **Smart member limits** (max 4 per group) for accountability
+- **Social campaign creation** with sharing capabilities
 
-### 🧠 **AI-Powered Financial Brain**
+### 💳 Seamless M-PESA Integration
 
-<div style="padding: 20px; border-left: 4px solid #00D4AA; background: rgba(0, 212, 170, 0.05); border-radius: 0 12px 12px 0; margin: 16px 0;">
+- **One-click payments** for rent, bills, and group contributions
+- **Real-time transaction verification** and logging
+- **Secure payment processing** with robust error handling
 
-• **Custom rule engine** delivers personalized financial advice (no external APIs needed)  
-• Smart recommendations: *"You're spending 40% on transport—try carpooling to save KES 2,000/month"*  
-• Daily rotating financial tips tailored to user behavior
+### 📊 Visual Financial Intelligence
 
-</div>
+- **Interactive dashboards** with progress bars and pie charts
+- **Downloadable PDF reports** for monthly budgets
+- **Spending pattern analysis** with actionable insights
+- **Goal tracking** with milestone celebrations
 
-<br>
+## 🎯 Core Features That Wow
 
-### 🤝 **Real-Time Community Savings (Chama)**
+### 💰 Personal Finance Mastery
 
-<div style="padding: 20px; border-left: 4px solid #667eea; background: rgba(102, 126, 234, 0.05); border-radius: 0 12px 12px 0; margin: 16px 0;">
+- **Smart Expense Categorization** with quick-tag system
+- **Budget Templates** for Students, Employees, Hustlers
+- **Automated Reminders** ("Pay Rent on 5th", "Savings goal 80% complete!")
+- **Historical Analysis** - track and compare past budgets
+- **Emergency Fund Calculator** with personalized advice
 
-• **WebSocket-powered** group savings with live chat  
-• **Transparent contribution tracking** with celebration animations  
-• **Smart member limits** (max 4 per group) for accountability  
-• **Social campaign creation** with sharing capabilities
+### 👥 Community-Driven Savings (Chama)
 
-</div>
+- **Create/Join Groups** with real-time member management
+- **Live Group Chat** with message persistence
+- **Contribution Tracking** with progress visualization
+- **Group Goals** with collective celebration logic
+- **Member Activity Dashboard** with transparency features
 
-<br>
+### 🎯 Social Impact & Giving
 
-### 💳 **Seamless M-PESA Integration**
+- **Peer-to-Peer Donations** with transparent tracking
+- **Campaign Creation** for causes and dreams
+- **Social Media Integration** (share progress, invite friends)
+- **Impact Visualization** ("You've helped Janet reach 80% of her book fund!")
 
-<div style="padding: 20px; border-left: 4px solid #FF6B00; background: rgba(255, 107, 0, 0.05); border-radius: 0 12px 12px 0; margin: 16px 0;">
+### 🛠️ Technical Excellence
 
-• **One-click payments** for rent, bills, and group contributions  
-• **Real-time transaction verification** and logging  
-• **Secure payment processing** with robust error handling
-
-</div>
-
-<br>
-
-### 📊 **Visual Financial Intelligence**
-
-<div style="padding: 20px; border-left: 4px solid #764ba2; background: rgba(118, 75, 162, 0.05); border-radius: 0 12px 12px 0; margin: 16px 0;">
-
-• **Interactive dashboards** with progress bars and pie charts  
-• **Downloadable PDF reports** for monthly budgets  
-• **Spending pattern analysis** with actionable insights  
-• **Goal tracking** with milestone celebrations
-
-</div>
-
-<br>
-
----
-
-<br>
-
-## 🎯 **Core Features That Wow**
-
-<br>
-
-### 💰 **Personal Finance Mastery**
-
-<div style="display: grid; gap: 12px; margin: 20px 0;">
-
-**Smart Expense Categorization** with quick-tag system  
-**Budget Templates** for Students, Employees, Hustlers  
-**Automated Reminders** ("Pay Rent on 5th", "Savings goal 80% complete!")  
-**Historical Analysis** - track and compare past budgets  
-**Emergency Fund Calculator** with personalized advice
-
-</div>
-
-<br>
-
-### 👥 **Community-Driven Savings (Chama)**
-
-<div style="display: grid; gap: 12px; margin: 20px 0;">
-
-**Create/Join Groups** with real-time member management  
-**Live Group Chat** with message persistence  
-**Contribution Tracking** with progress visualization  
-**Group Goals** with collective celebration logic  
-**Member Activity Dashboard** with transparency features
-
-</div>
-
-<br>
-
-### 🎯 **Social Impact & Giving**
-
-<div style="display: grid; gap: 12px; margin: 20px 0;">
-
-**Peer-to-Peer Donations** with transparent tracking  
-**Campaign Creation** for causes and dreams  
-**Social Media Integration** (share progress, invite friends)  
-**Impact Visualization** ("You've helped Janet reach 80% of her book fund!")
-
-</div>
-
-<br>
-
-### 📱 **Superior User Experience**
-
-<div style="display: grid; gap: 12px; margin: 20px 0;">
-
-**Mobile-First Design** with responsive layouts  
-**Real-Time Notifications** via WebSockets  
-**Smooth Animations** with Framer Motion  
-**PDF Export** for reports and receipts  
-**Offline-First Architecture** (Progressive Web App ready)
-
-</div>
-
-<br>
-
----
-
-<br>
-
-## 🛠️ **Technical Excellence**
-
-<br>
-
-### **Frontend Powerhouse**
+- **Frontend Powerhouse**
 
 ```javascript
 // React 18 + Vite + Modern Stack
@@ -284,7 +170,7 @@
 
 <br>
 
-## 📁 **Clean Architecture**
+## 📁 Clean Architecture
 
 <br>
 
@@ -316,7 +202,7 @@ sentismart/
 
 <br>
 
-## 🚀 **API Ecosystem**
+## 🚀 API Ecosystem
 
 <br>
 
@@ -376,7 +262,7 @@ GET  /api/mpesa/query        # Transaction status
 
 <br>
 
-## 🎨 **Screenshots & Demo**
+## 🎨 Screenshots & Demo
 
 <br>
 
@@ -420,7 +306,7 @@ GET  /api/mpesa/query        # Transaction status
 
 <br>
 
-## ⚡ **Quick Start Guide**
+## ⚡ Quick Start Guide
 
 <br>
 
@@ -502,7 +388,7 @@ npm run dev:frontend  # Runs on port 3000
 
 <br>
 
-## 🧪 **Testing & Quality Assurance**
+## 🧪 Testing & Quality Assurance
 
 <br>
 
@@ -541,7 +427,7 @@ npm run test:coverage
 
 <br>
 
-## 🌍 **Social Impact & Scalability**
+## 🌍 Social Impact & Scalability
 
 <br>
 
@@ -590,7 +476,7 @@ npm run test:coverage
 
 <br>
 
-## 🏅 **Why SentiSmart Wins**
+## 🏅 Why SentiSmart Wins
 
 <br>
 
@@ -646,7 +532,7 @@ npm run test:coverage
 
 <br>
 
-## 👨‍💻 **Meet the Developer**
+## 👨‍💻 Meet the Developer
 
 <div align="center" style="padding: 32px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; color: white; margin: 24px 0;">
 
@@ -673,7 +559,7 @@ npm run test:coverage
 
 <br>
 
-## 🤝 **Contributing to the Revolution**
+## 🤝 Contributing to the Revolution
 
 <div style="text-align: center; padding: 24px; background: rgba(0, 212, 170, 0.1); border-radius: 16px; margin: 20px 0;">
 
@@ -683,7 +569,7 @@ npm run test:coverage
 
 <br>
 
-### **How to Contribute**
+### How to Contribute
 
 <div style="display: grid; gap: 12px; padding: 20px; margin: 16px 0;">
 
@@ -697,7 +583,7 @@ npm run test:coverage
 
 <br>
 
-### **Contribution Areas**
+### Contribution Areas
 
 <div style="display: grid; gap: 12px; padding: 20px; background: rgba(102, 126, 234, 0.05); border-radius: 16px; margin: 16px 0;">
 
@@ -715,7 +601,7 @@ npm run test:coverage
 
 <br>
 
-## 📄 **License**
+## 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
@@ -725,7 +611,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 <br>
 
-## 🙏 **Acknowledgements**
+## 🙏 Acknowledgements
 
 <div style="display: grid; gap: 12px; padding: 24px; background: rgba(255, 193, 7, 0.1); border-radius: 16px; margin: 20px 0;">
 
@@ -743,7 +629,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 <br>
 
-## 🎯 **Join the Financial Revolution**
+## 🎯 Join the Financial Revolution
 
 <br>
 
