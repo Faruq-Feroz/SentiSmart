@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { auth } from '../config/firebase';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://sentismart.onrender.com/api';
 
 // Helper to get auth token
 const getAuthToken = async () => {
