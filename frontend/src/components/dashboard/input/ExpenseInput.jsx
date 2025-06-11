@@ -113,8 +113,9 @@ const ExpenseInput = () => {
             </select>
           </div>
           
+          {/* Make the submit button more visible and ensure it's not hidden */}
           <div className="submit-field">
-            <button type="submit" className="add-expense-btn">
+            <button type="submit" className="add-expense-btn" style={{marginTop: '10px', width: '100%'}}>
               <span className="btn-icon">➕</span>
               Add Expense
             </button>

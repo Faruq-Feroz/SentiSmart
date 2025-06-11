@@ -24,9 +24,9 @@ $gradient-card: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(16, 18
   margin-bottom: 24px;
   border: 1px solid rgba(139, 92, 246, 0.1);
   position: relative;
-  overflow: hidden;
-  max-width: 520px; // Add this line
-  width: 100%;      // Ensure it shrinks on smaller screens
+  overflow: visible; // Changed from hidden to visible
+  max-width: 100%; // Changed from 520px to 100%
+  width: 100%;
   
   &::before {
     content: '';
@@ -72,6 +72,18 @@ $gradient-card: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(16, 18
   grid-template-columns: 2fr 1fr 1.5fr auto;
   gap: 20px;
   align-items: end;
+  width: 100%; // Ensure full width
+  min-width: 0; // Allow grid items to shrink
+  
+  // Better tablet breakpoint
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    
+    .submit-field {
+      grid-column: 1 / -1; // Span full width
+    }
+  }
   
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -82,6 +94,7 @@ $gradient-card: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(16, 18
 .input-field {
   display: flex;
   flex-direction: column;
+  min-width: 0; // Allow inputs to shrink
   
   label {
     font-size: 14px;
@@ -99,6 +112,8 @@ $gradient-card: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(16, 18
   font-size: 16px;
   transition: all 0.3s ease;
   background: white;
+  width: 100%; // Ensure full width
+  box-sizing: border-box; // Include padding in width calculation
   
   &:focus {
     outline: none;
@@ -116,6 +131,7 @@ $gradient-card: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(16, 18
 .amount-input-group {
   display: flex;
   position: relative;
+  width: 100%;
   
   .currency-symbol {
     position: absolute;
@@ -130,6 +146,7 @@ $gradient-card: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(16, 18
   
   .amount-input {
     padding-left: 40px;
+    width: 100%;
   }
 }
 
@@ -142,6 +159,8 @@ $gradient-card: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(16, 18
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
   
   &:focus {
     outline: none;
@@ -158,6 +177,7 @@ $gradient-card: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(16, 18
 .submit-field {
   display: flex;
   align-items: flex-end;
+  justify-content: flex-start; // Align button to start
 }
 
 .add-expense-btn {
@@ -174,6 +194,8 @@ $gradient-card: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(16, 18
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  white-space: nowrap; // Prevent text wrapping
+  min-width: fit-content; // Ensure button doesn't shrink too much
   
   &:hover {
     transform: translateY(-2px);
@@ -392,6 +414,16 @@ $gradient-card: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(16, 18
       font-size: 14px;
     }
   }
+  
+  .submit-field {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .add-expense-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 // Animation Keyframes
@@ -408,4 +440,16 @@ $gradient-card: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(16, 18
 
 .expense-card {
   animation: slideUp 0.3s ease-out;
+}
+
+// Additional fix for desktop layout
+@media (min-width: 769px) {
+  .form-grid {
+    // Ensure grid has enough space
+    min-height: 80px; // Give minimum height to prevent collapsing
+  }
+  
+  .submit-field {
+    min-width: 120px; // Ensure button has minimum space
+  }
 }
