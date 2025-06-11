@@ -8,11 +8,12 @@
 
 <div align="center">
 
-<a href="./frontend/README.md">
-  <img src="https://img.shields.io/badge/📖%20Our%20Story-Group%2021%20Journey-32CD32?style=for-the-badge&labelColor=4A90E2&logo=book&logoColor=white" alt="Pitch-deck" />
+<a href="https://www.canva.com/design/DAGp5CzSsKo/9u6kIJCvQXMJ6IrIWS3tVw/edit?utm_content=DAGp5CzSsKo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+  <img src="https://img.shields.io/badge/📖%20Pitch%20Deck-Presentation-800080?style=for-the-badge&labelColor=800080&logo=book&logoColor=white" alt="Pitch-deck" />
 </a>
 
-<br><br>
+
+<br>
 
 ## <a href="https://senti-smart.vercel.app/"><img src="https://img.shields.io/badge/🚀%20LIVE-DEMO-00FF7F?style=for-the-badge&labelColor=FF6B35&logo=rocket&logoColor=white" alt="Live Demo" /></a>
 
