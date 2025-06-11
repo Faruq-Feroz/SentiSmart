@@ -15,7 +15,7 @@
 <br>
 
 <a href="https://senti-smart.vercel.app/">
-  <img src="./Screenshots/Home.png" alt="SentiSmart Live Demo" width="90%" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.1);" />
+  <img src="./Screenshots/Hero.png" alt="SentiSmart Live Demo" width="90%" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.1);" />
   <br><br>
   <em>✨ Experience SentiSmart in action - Click to visit! ✨</em>
 </a>
