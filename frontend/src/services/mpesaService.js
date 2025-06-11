@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'https://sentismart.onrender.com/api/orders/callback'
-
+// To this
+const API_URL = 'https://sentismart.onrender.com/api/mpesa'
 
 // Initiate STK Push for M-Pesa payment
 export const initiateSTKPush = async (phoneNumber, amount, campaignId) => {
