@@ -10,13 +10,12 @@ const MPESASection = () => {
         <Col>
           <h2>M-PESA Bill Payments</h2>
           <p className="text-muted">
-            Pay your rent and utility bills directly through M-PESA. This is a simulation environment for educational purposes.
+            Pay your rent and utility bills directly through M-PESA.
           </p>
           <Alert variant="info">
-            <Alert.Heading>Simulation Environment</Alert.Heading>
+            <Alert.Heading>M-PESA Payment System</Alert.Heading>
             <p>
-              This is a sandbox environment using Safaricom's M-PESA test credentials. No actual payments will be processed.
-              You can use this feature to learn how to manage your bills through mobile money platforms.
+              You can use this feature to manage your bills through mobile money platforms.
             </p>
           </Alert>
         </Col>
