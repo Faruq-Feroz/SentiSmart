@@ -1,17 +1,12 @@
 # 🚀 SentiSmart Financial Partner
 
-<div align="center">
-  <h3><em>A Smart Companion for Every Financial Move — Save, Spend, Share, and Succeed</em></h3>
-</div>
+### *A Smart Companion for Every Financial Move — Save, Spend, Share, and Succeed*
 
-<br>
-
-<div align="center">
+---
 
 <a href="https://www.canva.com/design/DAGp5CzSsKo/9u6kIJCvQXMJ6IrIWS3tVw/edit?utm_content=DAGp5CzSsKo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
   <img src="https://img.shields.io/badge/📖%20Pitch%20Deck-Presentation-800080?style=for-the-badge&labelColor=800080&logo=book&logoColor=white" alt="Pitch-deck" />
 </a>
-
 
 <br>
 
@@ -22,14 +17,10 @@
 <a href="https://senti-smart.vercel.app/">
   <img src="./Screenshots/Home.png" alt="SentiSmart Live Demo" width="90%" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.1);" />
   <br><br>
-  <p><em>✨ Experience Sentismart in action - Click to visit! ✨</em></p>
+  <em>✨ Experience SentiSmart in action - Click to visit! ✨</em>
 </a>
 
-</div>
-
 <br>
-
-<div align="center">
 
 [![MIT License](https://img.shields.io/badge/License-MIT-28a745?style=flat-square&logo=github)](https://choosealicense.com/licenses/mit/)
 [![Node.js Version](https://img.shields.io/badge/Node.js-%3E%3D14.0.0-339933?style=flat-square&logo=node.js)](https://nodejs.org/)
@@ -37,9 +28,8 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=flat-square&logo=mongodb)](https://www.mongodb.com/)
 [![M-PESA](https://img.shields.io/badge/M--PESA-Integrated-FF6B00?style=flat-square&logo=mobile)](https://developer.safaricom.co.ke/)
 
-</div>
-
 ---
+
 
 <br>
 
