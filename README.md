@@ -4,18 +4,20 @@
 
 ---
 
-<a href="https://www.canva.com/design/DAGp5CzSsKo/9u6kIJCvQXMJ6IrIWS3tVw/edit?utm_content=DAGp5CzSsKo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+<a href="https://www.canva.com/design/DAGp5CzSsKo/9u6kIJCvQXMJ6IrIWS3tVw/edit?utm_content=DAGp5CzSsKo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
   <img src="https://img.shields.io/badge/📖%20Pitch%20Deck-Presentation-800080?style=for-the-badge&labelColor=800080&logo=book&logoColor=white" alt="Pitch-deck" />
 </a>
 
 <br>
 
-## <a href="https://senti-smart.vercel.app/"><img src="https://img.shields.io/badge/🚀%20LIVE-DEMO-00FF7F?style=for-the-badge&labelColor=FF6B35&logo=rocket&logoColor=white" alt="Live Demo" /></a>
+<a href="https://senti-smart.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/🚀%20LIVE-DEMO-00FF7F?style=for-the-badge&labelColor=FF6B35&logo=rocket&logoColor=white" alt="Live Demo" />
+</a>
 
-<br>
+<br><br>
 
-<a href="https://senti-smart.vercel.app/">
-  <img src="./Screenshots/Hero.png" alt="SentiSmart Live Demo" width="90%" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.1);" />
+<a href="https://senti-smart.vercel.app/" target="_blank">
+  <img src="./Screenshots/Hero.png" alt="SentiSmart Live Demo" width="100%" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.1);" />
   <br><br>
   <em>✨ Experience SentiSmart in action - Click to visit! ✨</em>
 </a>
@@ -643,7 +645,7 @@ npm run test:coverage
 <div align="center" style="padding: 32px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; color: white; margin: 24px 0;">
 
 <h3>Hassan Faruq</h3>
-<em>Full-Stack Developer & Financial Technology Innovator</em>
+<em>Full-Stack Developer &  Technology Innovator</em>
 
 <br><br>
 
@@ -653,9 +655,9 @@ npm run test:coverage
 
 <br>
 
-📧 **Contact**: [your.email@example.com]  
-🔗 **LinkedIn**: [Your LinkedIn Profile]  
-🐙 **GitHub**: [Your GitHub Profile]
+📧 **Contact**: [faruqhassan@gmail.com.com]  
+🔗 **LinkedIn**: [https://www.linkedin.com/in/hassan-faruq777/]  
+🐙 **GitHub**: [https://github.com/Faruq-Feroz]
 
 </div>
 
@@ -768,7 +770,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 <div align="center" style="padding: 24px;">
 
-**🚀 [Live Demo](your-demo-url) | 📖 [Documentation](your-docs-url) | 💬 [Community Discord](your-discord-url)**
+**🚀 [Live Demo](https://senti-smart.vercel.app/) | 📖 [Documentation](your-docs-url) | **
 
 <br><br>
 
