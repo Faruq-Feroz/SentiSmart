@@ -1,7 +1,9 @@
-# 🚀 SentiSmart Financial Partner
-### *Revolutionizing Financial Literacy Through AI-Powered Community Savings*
+# SentiSmart Financial Partner
 
-**🚀 [Live Demo](your-demo-url) | 📖 [Documentation](your-docs-url) | 🎯 [Pitch Deck](your-pitch-deck-url)**
+**A Smart Companion for Every Financial Move — Save, Spend, Share, and Succeed**
+
+[![Live Demo](https://img.shields.io/badge/🚀_LIVE-DEMO-00FF7F?style=for-the-badge&labelColor=blue)](https://senti-smart.vercel.app/)
+[![Our Story](https://img.shields.io/badge/📖_Our_Story-Group_21_Journey-32CD32?style=for-the-badge&labelColor=blue)](./frontend/README.md)
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen)](https://nodejs.org/)
@@ -9,134 +11,113 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-green)](https://www.mongodb.com/)
 [![M-PESA](https://img.shields.io/badge/M--PESA-Integrated-orange)](https://developer.safaricom.co.ke/)
 
----
+<div align="center">
+  <img src="./Screenshots/Home.png" alt="SentiSmart Dashboard" width="100%" />
+  <p><em>Experience SentiSmart in action - <a href="https://senti-smart.vercel.app/">Visit Live Demo</a></em></p>
+</div>
 
-## 🏆 **Award-Winning Innovation**
+<br />
+
+> **SentiSmart isn't just an app—it's a financial revolution that transforms how everyone, especially youth, manages money, builds communities, and achieves dreams.**
+
 *Proudly developed with support from **Power Learn Project** and **Safaricom** through the S-hook Scholarship Program*
 
-> **"SentiSmart isn't just an app—it's a financial revolution that transforms how everyone, especially youth, manages money, builds communities, and achieves dreams."**
+<br />
 
----
-
-## 🌟 **The Problem We Solve**
+## Overview
 
 **60% of African youth lack basic financial literacy.** Traditional financial systems exclude millions. Savings groups (Chamas) operate on trust alone, without digital tools. Financial advice is expensive and inaccessible.
 
 **SentiSmart changes everything.**
 
----
+Our platform combines AI-powered financial intelligence, real-time community savings, seamless M-PESA integration, and visual financial insights to create a comprehensive solution for modern financial management.
 
-## ⚡ **What Makes Us Revolutionary**
+<br />
 
-### 🧠 **AI-Powered Financial Brain**
-- **Custom rule engine** delivers personalized financial advice (no external APIs needed)
+## Key Features
+
+### 🧠 AI-Powered Financial Intelligence
+- Custom rule engine delivers personalized financial advice (no external APIs needed)
 - Smart recommendations: *"You're spending 40% on transport—try carpooling to save KES 2,000/month"*
 - Daily rotating financial tips tailored to user behavior
+- Goal-specific recommendations and milestone tracking
 
-### 🤝 **Real-Time Community Savings (Chama)**
-- **WebSocket-powered** group savings with live chat
-- **Transparent contribution tracking** with celebration animations
-- **Smart member limits** (max 4 per group) for accountability
-- **Social campaign creation** with sharing capabilities
+### 🤝 Real-Time Community Savings (Chama)
+- WebSocket-powered group savings with live chat
+- Transparent contribution tracking with celebration animations
+- Smart member limits (max 4 per group) for accountability
+- Social campaign creation with sharing capabilities
 
-### 💳 **Seamless M-PESA Integration**
-- **One-click payments** for rent, bills, and group contributions
-- **Real-time transaction verification** and logging
-- **Secure payment processing** with robust error handling
+### 💳 Seamless M-PESA Integration
+- One-click payments for rent, bills, and group contributions
+- Real-time transaction verification and logging
+- Secure payment processing with robust error handling
+- STK Push integration for smooth user experience
 
-### 📊 **Visual Financial Intelligence**
-- **Interactive dashboards** with progress bars and pie charts
-- **Downloadable PDF reports** for monthly budgets
-- **Spending pattern analysis** with actionable insights
-- **Goal tracking** with milestone celebrations
+### 📊 Visual Financial Intelligence
+- Interactive dashboards with progress bars and pie charts
+- Downloadable PDF reports for monthly budgets
+- Spending pattern analysis with actionable insights
+- Goal tracking with milestone celebrations
 
----
+### 💰 Personal Finance Management
+- Smart expense categorization with quick-tag system
+- Budget templates for Students, Employees, and Entrepreneurs
+- Automated reminders and notifications
+- Historical analysis and budget comparison tools
+- Emergency fund calculator with personalized advice
 
-## 🎯 **Core Features That Wow**
+<br />
 
-### 💰 **Personal Finance Mastery**
-- **Smart Expense Categorization** with quick-tag system
-- **Budget Templates** for Students, Employees, Hustlers
-- **Automated Reminders** ("Pay Rent on 5th", "Savings goal 80% complete!")
-- **Historical Analysis** - track and compare past budgets
-- **Emergency Fund Calculator** with personalized advice
+## Technical Stack
 
-### 👥 **Community-Driven Savings (Chama)**
-- **Create/Join Groups** with real-time member management
-- **Live Group Chat** with message persistence
-- **Contribution Tracking** with progress visualization
-- **Group Goals** with collective celebration logic
-- **Member Activity Dashboard** with transparency features
-
-### 🎯 **Social Impact & Giving**
-- **Peer-to-Peer Donations** with transparent tracking
-- **Campaign Creation** for causes and dreams
-- **Social Media Integration** (share progress, invite friends)
-- **Impact Visualization** ("You've helped Janet reach 80% of her book fund!")
-
-### 📱 **Superior User Experience**
-- **Mobile-First Design** with responsive layouts
-- **Real-Time Notifications** via WebSockets
-- **Smooth Animations** with Framer Motion
-- **PDF Export** for reports and receipts
-- **Offline-First Architecture** (Progressive Web App ready)
-
----
-
-## 🛠️ **Technical Excellence**
-
-### **Frontend Powerhouse**
+### Frontend
 ```javascript
-// React 18 + Vite + Modern Stack
-- React.js (Hooks, Context API, useReducer)
-- Material-UI + Framer Motion + SASS
-- Chart.js + React-Chartjs-2 for visualizations
-- Socket.IO-client for real-time features
-- Firebase SDK for authentication
-- Axios for API management
-- PDF generation (jsPDF + html2canvas)
+React 18 + Vite + Modern Stack
+├── React.js (Hooks, Context API, useReducer)
+├── Material-UI + Framer Motion + SASS
+├── Chart.js + React-Chartjs-2 for visualizations
+├── Socket.IO-client for real-time features
+├── Firebase SDK for authentication
+├── Axios for API management
+└── PDF generation (jsPDF + html2canvas)
 ```
 
-### **Backend Architecture**
+### Backend
 ```javascript
-// Node.js + Express + MongoDB
-- Express.js with modular routing
-- MongoDB (Mongoose) with optimized schemas
-- Firebase Admin SDK for secure auth
-- Socket.IO for real-time communication
-- M-PESA Daraja API integration
-- Custom rule engine for AI advice
-- Comprehensive error handling & logging
+Node.js + Express + MongoDB
+├── Express.js with modular routing
+├── MongoDB (Mongoose) with optimized schemas
+├── Firebase Admin SDK for secure authentication
+├── Socket.IO for real-time communication
+├── M-PESA Daraja API integration
+├── Custom rule engine for AI advice
+└── Comprehensive error handling & logging
 ```
 
-### **Real-Time Features**
-- **WebSocket Architecture** for instant group updates
-- **Live Chat System** with message persistence
-- **Real-Time Notifications** across all connected devices
-- **Contribution Tracking** with immediate visual feedback
+### Security & Performance
+- Firebase Authentication (Email, Google, Phone)
+- JWT Token Management with secure refresh
+- M-PESA API Security with callback verification
+- Rate Limiting and CORS protection
+- Data validation at all entry points
+- 95%+ test coverage on critical paths
 
-### **Security & Performance**
-- **Firebase Authentication** (Email, Google, Phone)
-- **JWT Token Management** with secure refresh
-- **M-PESA API Security** with callback verification
-- **Rate Limiting** and **CORS** protection
-- **Data Validation** at all entry points
+<br />
 
----
-
-## 📁 **Clean Architecture**
+## Project Structure
 
 ```
 sentismart/
 ├── backend/
 │   ├── src/
-│   │   ├── config/        # Firebase, M-PESA, DB configs
+│   │   ├── config/        # Firebase, M-PESA, DB configurations
 │   │   ├── controllers/   # Business logic & AI engine
-│   │   ├── middleware/    # Auth, error handling, CORS
+│   │   ├── middleware/    # Authentication, error handling, CORS
 │   │   ├── models/        # Mongoose schemas (User, Chama, etc.)
 │   │   ├── routes/        # RESTful API endpoints
 │   │   ├── utils/         # Helper functions & rule engine
-│   │   └── server.js      # Express + Socket.IO entry
+│   │   └── server.js      # Express + Socket.IO entry point
 ├── frontend/
 │   ├── src/
 │   │   ├── components/    # Reusable UI components
@@ -148,24 +129,24 @@ sentismart/
 └── README.md
 ```
 
----
+<br />
 
-## 🚀 **API Ecosystem**
+## API Documentation
 
-### **Authentication & User Management**
+### Authentication
 ```http
 POST /api/auth/register    # User registration via Firebase
 GET  /api/auth/me         # Current user profile
 ```
 
-### **AI-Powered Advice Engine**
+### AI Advice Engine
 ```http
 GET /api/advice/recommendations  # Personalized financial advice
 GET /api/advice/daily-tips      # Daily rotating tips
 GET /api/advice/goal/:type      # Goal-specific recommendations
 ```
 
-### **Savings & Goals Management**
+### Savings & Goals
 ```http
 GET    /api/savings           # All user goals
 POST   /api/savings           # Create new goal
@@ -173,7 +154,7 @@ PUT    /api/savings/:id       # Update goal progress
 DELETE /api/savings/:id       # Remove goal
 ```
 
-### **Chama Community Features**
+### Chama Community
 ```http
 GET  /api/chama                    # User's groups
 POST /api/chama                    # Create new group
@@ -181,88 +162,70 @@ POST /api/chama/:id/contributions  # Add contribution
 GET  /api/chama/:id/messages       # Group chat history
 ```
 
-### **M-PESA Payment Integration**
+### M-PESA Integration
 ```http
-POST /api/mpesa/stkpush      # Initiate STK push
+POST /api/mpesa/stkpush      # Initiate STK push payment
 POST /api/mpesa/billpayment  # Pay utility bills
-POST /api/mpesa/callback     # Payment verification
-GET  /api/mpesa/query        # Transaction status
+POST /api/mpesa/callback     # Payment verification webhook
+GET  /api/mpesa/query        # Transaction status check
 ```
 
----
+<br />
 
-## 🎨 **Screenshots & Demo**
+## Getting Started
 
-*[Add compelling screenshots of your dashboard, Chama interface, and mobile views]*
-
-### **Dashboard Overview**
-- Real-time budget visualization
-- Goal progress with animations
-- Quick expense entry with smart tags
-
-### **Chama Group Interface**
-- Live contribution tracking
-- Group chat with emoji support
-- Member activity dashboard
-
-### **Mobile Experience**
-- Touch-optimized interface
-- Offline capability
-- Push notifications
-
----
-
-## ⚡ **Quick Start Guide**
-
-### **Prerequisites**
-- Node.js 14+ 
+### Prerequisites
+- Node.js 14+
 - MongoDB Atlas account
 - Firebase project
 - M-PESA Sandbox credentials
 
-### **1. Clone & Install**
-```bash
-git clone https://github.com/yourusername/sentismart.git
-cd sentismart
+### Installation
 
-# Install all dependencies
-npm run install:all
-```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/sentismart.git
+   cd sentismart
+   ```
 
-### **2. Environment Setup**
-```bash
-# Backend environment
-cp backend/.env.example backend/.env
+2. **Install dependencies**
+   ```bash
+   npm run install:all
+   ```
 
-# Frontend environment  
-cp frontend/.env.example frontend/.env
-```
+3. **Environment setup**
+   ```bash
+   # Backend environment
+   cp backend/.env.example backend/.env
+   
+   # Frontend environment
+   cp frontend/.env.example frontend/.env
+   ```
 
-### **3. Configure Services**
-- **Firebase**: Add your config to both frontend and backend
-- **MongoDB**: Update connection string in backend/.env
-- **M-PESA**: Add Consumer Key, Consumer Secret, and Passkey
+4. **Configure services**
+   - **Firebase**: Add your config to both frontend and backend
+   - **MongoDB**: Update connection string in `backend/.env`
+   - **M-PESA**: Add Consumer Key, Consumer Secret, and Passkey
 
-### **4. Launch Development**
-```bash
-# Start both frontend and backend concurrently
-npm run dev
+5. **Start development servers**
+   ```bash
+   # Start both frontend and backend
+   npm run dev
+   
+   # Or start individually
+   npm run dev:backend   # Port 5000
+   npm run dev:frontend  # Port 3000
+   ```
 
-# Or start individually
-npm run dev:backend   # Runs on port 5000
-npm run dev:frontend  # Runs on port 3000
-```
+6. **Access the application**
+   - Frontend: http://localhost:3000
+   - Backend API: http://localhost:5000/api
+   - Socket.IO: Connected automatically
 
-### **5. Access the Platform**
-- **Frontend**: http://localhost:3000
-- **Backend API**: http://localhost:5000/api
-- **Socket.IO**: Connected automatically
+<br />
 
----
+## Testing
 
-## 🧪 **Testing & Quality Assurance**
-
-### **Comprehensive Test Suite**
 ```bash
 # Run all tests
 npm run test
@@ -277,102 +240,75 @@ npm run test:frontend
 npm run test:coverage
 ```
 
-### **Quality Metrics**
-- **95%+ Test Coverage** on critical paths
-- **Performance Monitoring** with Lighthouse scores
-- **Security Auditing** with npm audit
-- **Code Quality** with ESLint + Prettier
+**Quality Metrics:**
+- 95%+ test coverage on critical paths
+- Performance monitoring with Lighthouse scores
+- Security auditing with npm audit
+- Code quality with ESLint + Prettier
 
----
+<br />
 
-## 🌍 **Social Impact & Scalability**
+## Deployment
 
-### **Target Demographics**
-- **Everyone seeking financial empowerment**, with special focus on youth (18-35)
+The application is deployed on Vercel with the following setup:
+- Frontend: Vercel deployment with environment variables
+- Backend: Vercel serverless functions
+- Database: MongoDB Atlas
+- Real-time: Socket.IO with adapter for scaling
+
+<br />
+
+## Impact & Market Opportunity
+
+### Target Demographics
+- **Youth (18-35)** seeking financial empowerment
 - **University Students** managing allowances and expenses
 - **Young Professionals** building emergency funds
 - **Community Groups** organizing savings and investments
 
-### **Scalability Features**
-- **Multi-tenant Architecture** ready for white-label deployment
-- **Microservices-ready** backend structure
-- **CDN-optimized** frontend build
-- **Database sharding** support for millions of users
+### Market Statistics
+- **500M+ African youth** need financial literacy tools
+- **50M+ M-PESA active users** with growing adoption
+- **$12B+ community savings market** opportunity
+- **60% of African youth** lack basic financial literacy
 
-### **Future Roadmap**
-- 📱 **Native Mobile Apps** (React Native)
-- 🗣️ **AI Voice Assistant** for financial coaching
-- 💱 **Multi-currency Support** for regional expansion
-- 📈 **Advanced Analytics** with machine learning insights
-- 🏦 **Financial Institution Integration** for account linking
-- 🎓 **Gamified Learning** modules with certificates
+### Future Roadmap
+- Native mobile apps (React Native)
+- AI voice assistant for financial coaching
+- Multi-currency support for regional expansion
+- Advanced analytics with machine learning
+- Financial institution integration
+- Gamified learning modules with certificates
 
----
+<br />
 
-## 🏅 **Why SentiSmart Wins**
+## Contributing
 
-### **Innovation Excellence**
-- **First platform** to combine personal finance, community savings, and social impact
-- **Custom AI engine** eliminates dependency on expensive external APIs
-- **Real-time collaboration** transforms traditional Chama groups
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
-### **Technical Mastery**
-- **Full-stack expertise** with modern technologies
-- **Scalable architecture** ready for millions of users
-- **Security-first design** with comprehensive validation
+### How to Contribute
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### **Social Impact**
-- **Addresses real problems** faced by African youth
-- **Promotes financial inclusion** through community features
-- **Drives behavior change** through gamification and AI coaching
+### Areas for Contribution
+- Bug fixes and performance improvements
+- New features and user experience enhancements
+- Testing and quality assurance
+- Documentation and tutorials
+- Localization for different African markets
 
-### **Market Potential**
-- **500M+ youth** in Africa need financial literacy tools
-- **Growing mobile money** adoption (M-PESA leads with 50M+ users)
-- **Community savings groups** represent $12B+ market opportunity
+<br />
 
----
+## License
 
-## 👨‍💻 **Meet the Developer**
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-**Hassan Faruq** - *Full-Stack Developer & Financial Technology Innovator*
+<br />
 
-- 🎓 **S-hook Scholarship Recipient** (Power Learn Project & Safaricom)
-- 💻 **MERN Stack Expert** with passion for fintech solutions
-- 🌍 **Community Builder** dedicated to African tech ecosystem
-- 📧 **Contact**: [your.email@example.com]
-- 🔗 **LinkedIn**: [Your LinkedIn Profile]
-- 🐙 **GitHub**: [Your GitHub Profile]
-
----
-
-## 🤝 **Contributing to the Revolution**
-
-We welcome contributors who share our vision of financial empowerment!
-
-### **How to Contribute**
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
-3. **Commit** your changes (`git commit -m 'Add AmazingFeature'`)
-4. **Push** to the branch (`git push origin feature/AmazingFeature`)
-5. **Open** a Pull Request
-
-### **Contribution Areas**
-- 🐛 **Bug Fixes** and performance improvements
-- ✨ **New Features** and user experience enhancements
-- 🧪 **Testing** and quality assurance
-- 📚 **Documentation** and tutorials
-- 🌍 **Localization** for different African markets
-
----
-
-## 📄 **License**
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 **Acknowledgements**
+## Acknowledgements
 
 - **Power Learn Project** for mentorship and technical guidance
 - **Safaricom** for S-hook Scholarship and M-PESA API access
@@ -380,25 +316,18 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - **African Tech Ecosystem** for inspiration and support
 - **Beta Testers** who provided invaluable feedback
 
----
+<br />
 
-## 🎯 **Join the Financial Revolution**
+## Links
 
-> **"Every great journey begins with a single step. Every financial dream starts with smart planning. Every community thrives with shared goals."**
-
-**SentiSmart** isn't just a platform—it's a movement. A movement that transforms how Africa manages money, builds communities, and achieves dreams.
-
-### **Ready to be part of something bigger?**
-
-⭐ **Star this repository** if you believe in financial empowerment  
-🍴 **Fork and contribute** to join our developer community  
-📢 **Share with friends** who need financial literacy tools  
-💡 **Submit ideas** for features that can change lives  
+- **🚀 [Live Demo](https://senti-smart.vercel.app/)**
+- **📖 [Documentation](your-docs-url)**
+- **💬 [Community Discord](your-discord-url)**
+- **📧 [Contact](mailto:your.email@example.com)**
 
 ---
 
-**🚀 [Live Demo](your-demo-url) | 📖 [Documentation](your-docs-url) | 💬 [Community Discord](your-discord-url)**
-
----
-
-*Built with ❤️ in Kenya for Africa and the World*
+<div align="center">
+  <p><strong>Built with ❤️ in Kenya for Africa and the World</strong></p>
+  <p><em>SentiSmart - Transforming Financial Lives, One Smart Decision at a Time</em></p>
+</div>
