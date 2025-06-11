@@ -17,8 +17,9 @@
 .chama-content {
   display: flex;
   gap: 25px;
-  height: calc(100vh - 250px);
-  min-height: 500px;
+  /* Remove fixed height and min-height to allow natural content flow */
+  height: auto;
+  min-height: unset;
 }
 
 .chama-sidebar {
@@ -28,24 +29,14 @@
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   padding: 20px;
-  height: fit-content;
-  max-height: calc(100vh - 250px);
+  /* Remove max-height to avoid double scrollbars */
+  max-height: none;
+  height: auto;
 }
 
 .groups-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-  margin-top: 15px;
-  max-height: calc(100vh - 350px);
-  overflow-y: auto;
-  padding-right: 5px;
-}
-
-.group-card {
-  transition: transform 0.2s, box-shadow 0.2s;
-  width: 100%;
-  margin-bottom: 10px;
+  max-height: none;
+  overflow-y: visible;
 }
 
 .chama-main {
@@ -53,7 +44,7 @@
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   flex-direction: column;
 }
