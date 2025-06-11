@@ -10,31 +10,36 @@ const authRoutes = require('./routes/auth');
 const adviceRoutes = require('./routes/advice');
 const savingsRoutes = require('./routes/savings');
 const chamaRoutes = require('./routes/chama');
-const mpesaRoutes = require('./routes/mpesa'); // Add this line
+const mpesaRoutes = require('./routes/mpesa');
 
 // Initialize express app
 const app = express();
 const server = http.createServer(app);
-// Socket.io setup with CORS configuration
-const io = socketIo(server, {
-  cors: {
-    origin: process.env.FRONTEND_URL || 'http://localhost:5173',
-    methods: ['GET', 'POST'],
-    credentials: true
-  }
-});
+
+// Allow these frontends
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://senti-smart.vercel.app'
+];
 
 // CORS configuration
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
 }));
 
+// Middleware
 app.use(express.json());
 
-// Connect to MongoDB
+// MongoDB connection
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/sentismart', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -47,7 +52,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/advice', adviceRoutes);
 app.use('/api/savings', savingsRoutes);
 app.use('/api/chama', chamaRoutes);
-app.use('/api/mpesa', mpesaRoutes); // Add this line
+app.use('/api/mpesa', mpesaRoutes);
 
 // Default route
 app.get('/', (req, res) => {
@@ -55,41 +60,43 @@ app.get('/', (req, res) => {
 });
 
 // Socket.io setup
+const io = socketIo(server, {
+  cors: {
+    origin: allowedOrigins,
+    methods: ['GET', 'POST'],
+    credentials: true
+  }
+});
+
 const Chama = require('./models/Chama');
 
 io.on('connection', (socket) => {
   console.log('New client connected');
-  
-  // Join a Chama room
+
   socket.on('joinChamaRoom', (chamaId) => {
     socket.join(chamaId);
     console.log(`Client joined Chama room: ${chamaId}`);
   });
 
-  // Leave a Chama room
   socket.on('leaveChamaRoom', (chamaId) => {
     socket.leave(chamaId);
     console.log(`Client left Chama room: ${chamaId}`);
   });
 
-  // Send a message to a Chama room
   socket.on('sendMessage', async ({ chamaId, message, user }) => {
     try {
-      // Save message to database
       const chamaGroup = await Chama.findById(chamaId);
       if (chamaGroup) {
-        // Check if user is a member or creator
         if (chamaGroup.creator === user.uid || chamaGroup.members.includes(user.uid)) {
           const newMessage = {
             sender: user.uid,
             content: message,
             timestamp: new Date()
           };
-          
+
           chamaGroup.messages.push(newMessage);
           await chamaGroup.save();
-          
-          // Broadcast message to all clients in the room
+
           io.to(chamaId).emit('newMessage', {
             ...newMessage,
             senderName: user.displayName,
@@ -102,7 +109,6 @@ io.on('connection', (socket) => {
     }
   });
 
-  // Notify about new contribution
   socket.on('newContribution', ({ chamaId, contribution, user }) => {
     io.to(chamaId).emit('contributionAdded', {
       ...contribution,
