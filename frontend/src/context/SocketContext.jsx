@@ -17,15 +17,11 @@ export const SocketProvider = ({ children }) => {
   useEffect(() => {
     if (isAuthenticated && user) {
       // Create socket instance with explicit connection URL
-      const socketInstance = io(import.meta.env.VITE_API_URL || 'http://localhost:5000', {
-        withCredentials: true,
+      const SOCKET_URL = (import.meta.env.VITE_API_URL || 'http://localhost:5000').replace(/\/api$/, '');
+      const socketInstance = io(SOCKET_URL, {
         transports: ['websocket', 'polling'],
         reconnectionAttempts: 5,
         reconnectionDelay: 1000,
-        timeout: 10000,
-        auth: {
-          token: user.uid // Send user ID for authentication
-        }
       });
       
       socketInstance.on('connect', () => {

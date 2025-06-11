@@ -20,22 +20,25 @@ const SalaryInput = () => {
   }
 
   return (
-    <div className="input-container">
-      <h3>Monthly Income</h3>
-      <form onSubmit={handleSubmit}>
-        <div className="input-group">
+    <div className="expense-input-container">
+      <div className="section-header">
+        <h3>Monthly Income</h3>
+        <p>Enter your monthly income to get personalized financial insights.</p>
+      </div>
+      <form onSubmit={handleSubmit} className="expense-form">
+        <div className="amount-input-group">
           <span className="currency-symbol">$</span>
           <input
             type="number"
             value={salary}
             onChange={handleSalaryChange}
             placeholder="Enter your monthly income"
-            className="form-control"
+            className="styled-input amount-input"
             min="0"
             step="0.01"
           />
         </div>
-        <button type="submit" className="submit-btn">Update Income</button>
+        <button type="submit" className="add-expense-btn" style={{marginTop: '20px'}}>Update Income</button>
       </form>
     </div>
   )

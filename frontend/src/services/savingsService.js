@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { auth } from '../config/firebase';
 
-const API_URL = import.meta.env.VITE_API_URL ? `${import.meta.env.VITE_API_URL}/api` : 'https://sentismart.onrender.com/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://sentismart.onrender.com/api';
 
 // Helper to get auth token
 const getAuthToken = async () => {
