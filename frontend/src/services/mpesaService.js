@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-const API_URL = process.env.NODE_ENV === 'production' 
-  ? '/api/mpesa' 
-  : 'http://localhost:5000/api/mpesa';
+const API_URL = 'https://sentismart.onrender.com/api/orders/callback'
+
 
 // Initiate STK Push for M-Pesa payment
 export const initiateSTKPush = async (phoneNumber, amount, campaignId) => {
