@@ -1,3 +1,4 @@
+// DashboardOverview.jsx
 import React, { useContext } from 'react'
 import { AuthContext } from '../../context/AuthContext'
 import FinancialSummary from './summary/FinancialSummary'
@@ -10,18 +11,21 @@ import './DashboardStyles.css'
 const DashboardOverview = () => {
   const { user } = useContext(AuthContext)
   const userName = user?.displayName?.split(' ')[0] || 'there'
-
+  
   return (
     <div className="dashboard-container">
-      <h2 className="dashboard-title">Welcome, {userName}!</h2>
-      
+      <div className="dashboard-header">
+        <h2 className="dashboard-title">Welcome back, {userName}!</h2>
+        <p className="dashboard-subtitle">Let's manage your finances smartly</p>
+      </div>
+     
       <div className="dashboard-layout">
         <div className="input-section">
           <SalaryInput />
           <ExpenseInput />
           <SavedBudgets />
         </div>
-        
+       
         <div className="advisor-section">
           <FinancialAdvisor />
         </div>

@@ -8,18 +8,18 @@ const ExpenseInput = () => {
   const [expenseAmount, setExpenseAmount] = useState('')
   const [expenseCategory, setExpenseCategory] = useState('Other')
   
-  // Common expense categories
+  // Common expense categories with icons
   const categories = [
-    'Housing/Rent', 
-    'Food', 
-    'Transportation', 
-    'Utilities', 
-    'Healthcare', 
-    'Entertainment', 
-    'Education',
-    'Clothing',
-    'Savings',
-    'Other'
+    { value: 'Housing/Rent', label: '🏠 Housing/Rent' },
+    { value: 'Food', label: '🍽️ Food' },
+    { value: 'Transportation', label: '🚗 Transportation' },
+    { value: 'Utilities', label: '⚡ Utilities' },
+    { value: 'Healthcare', label: '🏥 Healthcare' },
+    { value: 'Entertainment', label: '🎬 Entertainment' },
+    { value: 'Education', label: '📚 Education' },
+    { value: 'Clothing', label: '👕 Clothing' },
+    { value: 'Savings', label: '💰 Savings' },
+    { value: 'Other', label: '📝 Other' }
   ]
 
   const handleSubmit = (e) => {
@@ -55,79 +55,112 @@ const ExpenseInput = () => {
     })
   }
 
+  const getCategoryIcon = (category) => {
+    const categoryObj = categories.find(cat => cat.value === category)
+    return categoryObj ? categoryObj.label.split(' ')[0] : '📝'
+  }
+
   return (
-    <div className="input-container">
-      <h3>Expenses</h3>
-      <form onSubmit={handleSubmit}>
-        <div className="input-row">
-          <input
-            type="text"
-            value={expenseName}
-            onChange={(e) => setExpenseName(e.target.value)}
-            placeholder="Expense name"
-            className="form-control"
-            required
-          />
-          
-          <div className="input-group">
-            <span className="currency-symbol">$</span>
+    <div className="expense-input-container">
+      <div className="section-header">
+        <h3>💸 Track Your Expenses</h3>
+        <p>Add your daily expenses to monitor your spending</p>
+      </div>
+      
+      <form onSubmit={handleSubmit} className="expense-form">
+        <div className="form-grid">
+          <div className="input-field">
+            <label>Expense Name</label>
             <input
-              type="number"
-              value={expenseAmount}
-              onChange={(e) => setExpenseAmount(e.target.value)}
-              placeholder="Amount"
-              className="form-control"
-              min="0"
-              step="0.01"
+              type="text"
+              value={expenseName}
+              onChange={(e) => setExpenseName(e.target.value)}
+              placeholder="e.g., Grocery shopping"
+              className="styled-input"
               required
             />
           </div>
           
-          <select 
-            value={expenseCategory}
-            onChange={(e) => setExpenseCategory(e.target.value)}
-            className="form-control"
-          >
-            {categories.map(category => (
-              <option key={category} value={category}>{category}</option>
-            ))}
-          </select>
+          <div className="input-field">
+            <label>Amount</label>
+            <div className="amount-input-group">
+              <span className="currency-symbol">$</span>
+              <input
+                type="number"
+                value={expenseAmount}
+                onChange={(e) => setExpenseAmount(e.target.value)}
+                placeholder="0.00"
+                className="styled-input amount-input"
+                min="0"
+                step="0.01"
+                required
+              />
+            </div>
+          </div>
           
-          <button type="submit" className="add-btn">Add</button>
+          <div className="input-field">
+            <label>Category</label>
+            <select 
+              value={expenseCategory}
+              onChange={(e) => setExpenseCategory(e.target.value)}
+              className="styled-select"
+            >
+              {categories.map(category => (
+                <option key={category.value} value={category.value}>
+                  {category.label}
+                </option>
+              ))}
+            </select>
+          </div>
+          
+          <div className="submit-field">
+            <button type="submit" className="add-expense-btn">
+              <span className="btn-icon">➕</span>
+              Add Expense
+            </button>
+          </div>
         </div>
       </form>
       
-      <div className="expenses-list">
+      <div className="expenses-section">
         {budget.expenses.length > 0 ? (
-          <table className="expenses-table">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Category</th>
-                <th>Amount</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
+          <>
+            <div className="expenses-header">
+              <h4>Recent Expenses</h4>
+              <div className="total-expenses">
+                Total: ${budget.expenses.reduce((sum, exp) => sum + exp.amount, 0).toFixed(2)}
+              </div>
+            </div>
+            <div className="expenses-grid">
               {budget.expenses.map(expense => (
-                <tr key={expense.id}>
-                  <td>{expense.name}</td>
-                  <td>{expense.category}</td>
-                  <td>${expense.amount.toFixed(2)}</td>
-                  <td>
-                    <button 
-                      onClick={() => handleDeleteExpense(expense.id)}
-                      className="delete-btn"
-                    >
-                      Delete
-                    </button>
-                  </td>
-                </tr>
+                <div key={expense.id} className="expense-card">
+                  <div className="expense-info">
+                    <div className="expense-header-card">
+                      <span className="expense-icon">{getCategoryIcon(expense.category)}</span>
+                      <div className="expense-details">
+                        <h5>{expense.name}</h5>
+                        <span className="expense-category">{expense.category}</span>
+                      </div>
+                    </div>
+                    <div className="expense-amount">${expense.amount.toFixed(2)}</div>
+                  </div>
+                  <button 
+                    onClick={() => handleDeleteExpense(expense.id)}
+                    className="delete-expense-btn"
+                    title="Delete expense"
+                  >
+                    🗑️
+                  </button>
+                </div>
               ))}
-            </tbody>
-          </table>
+            </div>
+          </>
         ) : (
-          <p className="no-expenses">No expenses added yet</p>
+          <div className="no-expenses-state">
+            <div className="empty-icon">📊</div>
+            <h4>No expenses tracked yet</h4>
+            <p>Start adding your expenses to see insights about your spending habits</p>
+          </div>
         )}
       </div>
     </div>
