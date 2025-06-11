@@ -14,6 +14,12 @@
   <img src="https://img.shields.io/badge/🚀%20LIVE-DEMO-00FF7F?style=for-the-badge&labelColor=FF6B35&logo=rocket&logoColor=white" alt="Live Demo" />
 </a>
 
+<br>
+
+<a href="./frontend/README.md" target="_blank">
+  <img src="https://img.shields.io/badge/📸%20Screenshots-Gallery-FF1493?style=for-the-badge&labelColor=FF1493&logo=image&logoColor=white" alt="Screenshots" />
+</a>
+
 <br><br>
 
 <a href="https://senti-smart.vercel.app/" target="_blank">
