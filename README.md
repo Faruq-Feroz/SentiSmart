@@ -436,7 +436,7 @@ npm run test:coverage
 <div style="padding: 20px; border-radius: 16px; background: linear-gradient(135deg, rgba(220, 53, 69, 0.1) 0%, rgba(255, 193, 7, 0.1) 100%); margin: 16px 0;">
 
 • **Everyone seeking financial empowerment**, with special focus on youth (18-35)  
-• **University Students** managing allowances and expenses  
+• **University and Students** managing allowances and expenses  
 • **Young Professionals** building emergency funds  
 • **Community Groups** organizing savings and investments
 
@@ -504,15 +504,8 @@ npm run test:coverage
 
 <br>
 
-### **Social Impact**
 
-<div style="padding: 20px; border-left: 4px solid #dc3545; background: rgba(220, 53, 69, 0.05); border-radius: 0 12px 12px 0; margin: 16px 0;">
 
-• **Addresses real problems** faced by African youth  
-• **Promotes financial inclusion** through community features  
-• **Drives behavior change** through gamification and AI coaching
-
-</div>
 
 <br>
 
@@ -541,11 +534,7 @@ npm run test:coverage
 
 <br><br>
 
-🎓 **S-hook Scholarship Recipient** (Power Learn Project & Safaricom)  
-💻 **MERN Stack Expert** with passion for fintech solutions  
-🌍 **Community Builder** dedicated to African tech ecosystem  
 
-<br>
 
 📧 **Contact**: [faruqhassan@gmail.com.com]  
 🔗 **LinkedIn**: [https://www.linkedin.com/in/hassan-faruq777/]  
@@ -613,15 +602,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 🙏 Acknowledgements
 
-<div style="display: grid; gap: 12px; padding: 24px; background: rgba(255, 193, 7, 0.1); border-radius: 16px; margin: 20px 0;">
 
-• **Power Learn Project** for mentorship and technical guidance  
-• **Safaricom** for S-hook Scholarship and M-PESA API access  
-• **Open Source Community** for amazing libraries and tools  
-• **African Tech Ecosystem** for inspiration and support  
-• **Beta Testers** who provided invaluable feedback
-
-</div>
 
 <br>
 
