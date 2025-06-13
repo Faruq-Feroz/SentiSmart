@@ -36,9 +36,6 @@
 
 ## 🔬 Smart Tech. Real Benefits
 
-<div align="center">
-  <em>Proudly developed with support from <strong>Power Learn Project</strong> and <strong>Safaricom</strong> through the S-hook Scholarship Program</em>
-</div>
 
 > ### *"SentiSmart isn't just an app—it's a financial revolution that transforms how everyone, especially youth, manages money, builds communities, and achieves dreams."*
 
